@@ -54,3 +54,14 @@ button{
     font-size: 18px;
 }
 
+.teste{
+    display: flex;
+    background-color: white;
+    font-size: 30x;
+    border: 1px solid black;
+    width: 600px;
+    min-height: 70px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    
+}

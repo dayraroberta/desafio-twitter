@@ -3,7 +3,6 @@
     <meta charset="utf-8">
     <title>Twitter</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
   </head>
   <body>
     <nav>Twitter</nav>
@@ -13,11 +12,13 @@
       <p>Olá! Sou uma front-end developer jr.</p>
       </div>
       <form>
-        <textarea id="tweet" placeholder="What's happening?"></textarea>
-        <button onClick="Twittar()">Tweet</button>
+        <textarea rows="7" columns="10" id="tweet" placeholder="What's happening?"></textarea>
+        <div id="wordCount">140</div>
+        <button onClick="Twittar()" id="button-tweet" disabled>Tweet</button>
      </form>
     </section>
     <div id="timeline">
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
