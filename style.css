@@ -123,5 +123,11 @@ button{
     margin-top: 20px;
     word-wrap: break-word;
     justify-content: flex-end;
-    
+    padding: 5px;
+}
+
+.time{
+    font-style: italic;
+    color: grey;
+    font-size: 15px;
 }

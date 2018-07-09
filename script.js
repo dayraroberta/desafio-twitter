@@ -1,15 +1,25 @@
 var newTweet = document.getElementById("tweet");
+var clearArea = document.getElementById("tweet");
 
 //Enviar o tweet
 function Twittar() {
     var newTweet =  document.getElementById("tweet").value;
     var timeline = document.createElement('div');
+    //Adicionar hora no tweet
+    var hour = document.createElement('p');
+    var timeStamp = Date().split(" ")[4];
     timeline.setAttribute("class", "new-tweet");
+    hour.setAttribute("class", "time");
+
     timeline.textContent = newTweet;
-    
+    hour.textContent = timeStamp;
+    timeline.appendChild(hour);
+
     var post = document.getElementById("timeline");
     post.insertBefore(timeline, post.firstChild);
     event.preventDefault();
+
+    clearArea.value = "";
 }
 
 //Adicionar o contador de caracteres 
