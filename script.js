@@ -40,3 +40,10 @@ document.getElementById("tweet").addEventListener('input', function () {
         document.getElementById("wordCount").style = "color: black";
     }
 })
+
+//Aumentar text area
+function Size(){
+    tweet.style.height = "";
+    tweet.style.height = tweet.scrollHeight + "px";
+}
+
