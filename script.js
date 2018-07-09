@@ -1,4 +1,4 @@
-var newTweet = document.getElementById("tweet")
+var newTweet = document.getElementById("tweet");
 
 //Enviar o tweet
 function Twittar() {
@@ -24,6 +24,10 @@ document.getElementById("tweet").addEventListener('input', function () {
     if (charCounter > 0 && charCounter <= 140){
         document.getElementById("button-tweet").disabled = false;
     } else {
+        document.getElementById("button-tweet").disabled = true;
+    }
+//Impedir texto vazio
+    if (newTweet.value.trim() == ""){
         document.getElementById("button-tweet").disabled = true;
     }
 
