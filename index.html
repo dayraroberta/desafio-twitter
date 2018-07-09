@@ -2,14 +2,18 @@
   <head>
     <meta charset="utf-8">
     <title>Twitter</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/all.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
   </head>
   <body>
     <nav>Twitter</nav>
     <section>
       <div class="profile">
-      <h1>Profile</h1>
-      <p>Olá! Sou uma front-end developer jr.</p>
+       <i class="fas fa-user-circle"></i>
+       <p class="p1">@myusername_</p>
+       <p>Olá! Sou uma front-end developer jr.</p>
+       <p class="p3">Followers: 1.179 Following: 674</p>
       </div>
       <form>
         <textarea id="tweet" placeholder="What's happening?" oninput="Size()"></textarea>
@@ -17,8 +21,22 @@
         <button onClick="Twittar()" id="button-tweet" disabled>Tweet</button>
      </form>
     </section>
-    <div id="timeline">
-    </div>
+    <div class="container">
+     <div class="trends">
+        <p class="p-main">Worldwide trends</p>
+        <p class="trending">FRAxBEL</p>
+        <p class="trending">World Cup 2018</p>
+        <p class="trending">Eden Hazard</p>
+        <p class="trending">#trainingCamp</p>
+        <p class="trending">NFL</p>
+        <p class="trending">Premier League</p>
+        <p class="trending">Chelsea FC</p>
+        <p class="trending">Fekir knee injury</p>
+     </div>
+     <div id="timeline">
+        <div class="line"></div>
+     </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>

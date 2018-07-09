@@ -1,8 +1,11 @@
 body{
     width: 100%;
     margin: 0 auto;
-    background-color: #c0deed;
+    background-image: url("https://vivelatinoamerica.files.wordpress.com/2015/12/palm2.jpg");
     font-family: 'Lato', sans-serif;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: end;
 }
 
 nav{
@@ -27,14 +30,62 @@ section{
     display: flex;
     flex-direction: column;
     width: 410px;
+    border: 1px solid #0084b4;
+    background-color: #bcedff;
+    max-height: 150px;
+    padding: 10px;
+}
+
+.fa-user-circle{
+    color: black;
+    font-size: 50px;
+}
+
+.p1{
+    color: gray;
+    font-style: oblique;
+    margin-bottom: -10px
+}
+
+.p3{
+    color: #4d5456;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.trends{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    border: 1px solid #0084b4;
+    background-color: #bcedff;
+    max-height: 670px;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.p-main{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.trending{
+    font-style: oblique;
+    font-size: 18px;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    
+    width: 600px;    
 }
 
 textarea{
@@ -57,8 +108,13 @@ button{
     font-size: 18px;
 }
 
+.line{
+    background-color: white;
+    height: 1px;
+    width: 600px;
+}
+
 .new-tweet{
-    display: flex;
     background-color: white;
     font-size: 30x;
     border: 1px solid black;
@@ -66,5 +122,6 @@ button{
     min-height: 75px;
     margin-top: 20px;
     word-wrap: break-word;
+    justify-content: flex-end;
     
 }

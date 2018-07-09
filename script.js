@@ -44,7 +44,6 @@ document.getElementById("tweet").addEventListener('input', function () {
 
 //Aumentar text area
 function Size(){
-    tweet.style.height = "";
-    tweet.style.height = tweet.scrollHeight + "px";
+    newTweet.style.height = "";
+    newTweet.style.height = newTweet.scrollHeight + "px";
 }
-
