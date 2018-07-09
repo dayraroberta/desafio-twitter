@@ -26,4 +26,13 @@ document.getElementById("tweet").addEventListener('input', function () {
     } else {
         document.getElementById("button-tweet").disabled = true;
     }
+
+//Mudar a cor do contador
+    if (result <= 19 && result >= 10){
+        document.getElementById("wordCount").style = "color: orange";
+    } else if(result <= 9){
+        document.getElementById("wordCount").style = "color: red";
+    } else {
+        document.getElementById("wordCount").style = "color: black";
+    }
 })
