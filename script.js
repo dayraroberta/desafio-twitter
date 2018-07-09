@@ -4,13 +4,14 @@ var newTweet = document.getElementById("tweet");
 function Twittar() {
     var newTweet =  document.getElementById("tweet").value;
     var timeline = document.createElement('div');
-    timeline.setAttribute("class", "teste");
+    timeline.setAttribute("class", "new-tweet");
     timeline.textContent = newTweet;
     
     var post = document.getElementById("timeline");
     post.insertBefore(timeline, post.firstChild);
     event.preventDefault();
 }
+
 //Adicionar o contador de caracteres 
 var maxChar = document.getElementById("wordCount").innerHTML;
 

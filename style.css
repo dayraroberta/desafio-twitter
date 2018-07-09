@@ -36,9 +36,7 @@ form{
     width: 400px;
     
 }
-form{
-    height: auto;
-}
+
 textarea{
     display: flex;
     resize: none;
@@ -59,7 +57,7 @@ button{
     font-size: 18px;
 }
 
-.teste{
+.new-tweet{
     display: flex;
     background-color: white;
     font-size: 30x;
