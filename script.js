@@ -17,7 +17,8 @@ function Twittar() {
 
     var post = document.getElementById("timeline");
     post.insertBefore(timeline, post.firstChild);
-    
+    event.preventDefault();
+
     clearArea.value = "";
 }
 
